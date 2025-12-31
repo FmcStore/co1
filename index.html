@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FmcComic - Baca Komik Online Gratis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-spinner">
+            <i class="fas fa-book-open"></i>
+            <p>Memuat FmcComic...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-book-reader"></i>
+                    <span>FmcComic</span>
+                </a>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Cari komik..." autocomplete="off">
+                        <button id="clearSearch" class="clear-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Beranda</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-fire"></i>
+                        <span>Populer</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-history"></i>
+                        <span>Terbaru</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Banner -->
+            <section class="hero-banner">
+                <div class="swiper heroSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Banner akan diisi via JS -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- Hot Updates / Top Komik -->
+            <section class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-fire"></i> Top Komik</h2>
+                    <a href="#" class="see-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="comic-grid" id="hotComics">
+                    <!-- Diisi via JS -->
+                </div>
+            </section>
+
+            <!-- Project Updates / Rekomendasi -->
+            <section class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-star"></i> Rekomendasi</h2>
+                    <a href="#" class="see-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="comic-grid" id="recommendedComics">
+                    <!-- Diisi via JS -->
+                </div>
+            </section>
+
+            <!-- Latest Updates / Terbaru -->
+            <section class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-clock"></i> Update Terbaru</h2>
+                    <a href="#" class="see-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="latest-updates" id="latestUpdates">
+                    <!-- Diisi via JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-book-reader"></i> FmcComic</h3>
+                    <p>Platform baca komik online terbaik dengan koleksi terlengkap dari berbagai genre.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategori</h3>
+                    <a href="#">Manga</a>
+                    <a href="#">Manhwa</a>
+                    <a href="#">Manhua</a>
+                    <a href="#">Webtoon</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Genre Populer</h3>
+                    <a href="#">Action</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Fantasy</a>
+                    <a href="#">Comedy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FmcComic. Semua hak cipta komik milik penerbit masing-masing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
